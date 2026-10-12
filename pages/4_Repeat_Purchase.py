@@ -79,7 +79,7 @@ with p6:
 st.markdown("<div style='height: 1.5rem;'></div>", unsafe_allow_html=True)
 
 # Problem Formulation & Chronological Split Narrative
-formulation_html = f"""
+formulation_html = fr"""
 <div style="font-size: 0.88rem; color: #1C1917; line-height: 1.7;">
     <b>Unit of Prediction:</b> Customer active during the 90-day lookback window prior to snapshot date.<br/>
     <b>Historical Features:</b> Strictly extracted from <code>[T - 90 days, T]</code>. Zero future observations leak into feature vectors.<br/>
