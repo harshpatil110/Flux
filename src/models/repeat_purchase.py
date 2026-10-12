@@ -60,8 +60,8 @@ def build_customer_snapshots(
     snapshot_records = []
 
     for snap_date in snapshot_dates:
-        lookback_start = snap_date - pd.Timedelta(days=lookback_days)
-        label_end = snap_date + pd.Timedelta(days=label_days)
+        lookback_start = snap_date - pd.Timedelta(days=int(lookback_days))
+        label_end = snap_date + pd.Timedelta(days=int(label_days))
 
         # 1. Historical Lookback Data (Strictly < snap_date and >= lookback_start)
         history_df = valid_cust_df[
