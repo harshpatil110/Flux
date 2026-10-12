@@ -1,0 +1,230 @@
+/* Flux: Warm Editorial Minimalism Design System */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Global Root Variables */
+:root {
+  --canvas: #F7F5F0;
+  --canvas-alt: #F2F0EA;
+  --surface-card: #FFFFFF;
+  --surface-elevated: #FAFAF9;
+  --border-default: #E7E5E4;
+  --border-subtle: #F5F5F4;
+  --text-primary: #1C1917;
+  --text-secondary: #78716C;
+  --text-muted: #A8A29E;
+  --accent-primary: #BFDBFE;
+  --action-accent: #93C5FD;
+  --text-accent: #1E40AF;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* App Background Canvas */
+.stApp {
+  background-color: var(--canvas) !important;
+  color: var(--text-primary) !important;
+  font-family: var(--font-sans) !important;
+}
+
+/* Top header cleanup */
+header[data-testid="stHeader"] {
+  background: transparent !important;
+}
+
+/* Sidebar styling */
+section[data-testid="stSidebar"] {
+  background-color: var(--canvas-alt) !important;
+  border-right: 1px solid var(--border-default) !important;
+}
+
+section[data-testid="stSidebar"] .stMarkdown h1,
+section[data-testid="stSidebar"] .stMarkdown h2,
+section[data-testid="stSidebar"] .stMarkdown h3 {
+  font-family: var(--font-sans) !important;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-sans) !important;
+  font-weight: 850 !important;
+  letter-spacing: -0.03em !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 0.25rem !important;
+}
+
+h2 {
+  font-family: var(--font-sans) !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--text-primary) !important;
+}
+
+h3 {
+  font-family: var(--font-sans) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.01em !important;
+  color: var(--text-primary) !important;
+}
+
+/* Serif Editorial Accents */
+.editorial-hero-tagline {
+  font-family: var(--font-serif) !important;
+  font-size: 1.45rem !important;
+  font-style: italic !important;
+  color: var(--text-secondary) !important;
+  line-height: 1.4 !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* UI Label / Category Tag */
+.ui-label {
+  font-family: var(--font-sans) !important;
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--text-secondary) !important;
+}
+
+/* Custom Card Surface */
+.flux-card {
+  background-color: var(--surface-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 8px !important;
+  padding: 1.25rem 1.5rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+  margin-bottom: 1rem !important;
+}
+
+.flux-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Metrics */
+div[data-testid="stMetric"] {
+  background-color: var(--surface-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 8px !important;
+  padding: 1rem 1.25rem !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+div[data-testid="stMetricLabel"] {
+  font-size: 0.72rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.07em !important;
+  text-transform: uppercase !important;
+  color: var(--text-secondary) !important;
+}
+
+div[data-testid="stMetricValue"] {
+  font-size: 1.85rem !important;
+  font-weight: 750 !important;
+  color: var(--text-primary) !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* Buttons */
+button[kind="primary"] {
+  background-color: var(--text-primary) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--text-primary) !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.02em !important;
+  padding: 0.45rem 1.25rem !important;
+  box-shadow: none !important;
+  transition: all 0.2s ease !important;
+}
+
+button[kind="primary"]:hover {
+  background-color: #332f2c !important;
+  border-color: #332f2c !important;
+}
+
+button[kind="secondary"] {
+  background-color: var(--surface-card) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+button[kind="secondary"]:hover {
+  background-color: var(--surface-elevated) !important;
+  border-color: #D6D3D1 !important;
+}
+
+/* Inputs & Selectboxes */
+div[data-baseweb="select"] > div,
+div[data-baseweb="input"] > div {
+  background-color: var(--surface-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 4px !important;
+}
+
+div[data-baseweb="select"] > div:focus-within,
+div[data-baseweb="input"] > div:focus-within {
+  border-color: var(--action-accent) !important;
+  box-shadow: 0 0 0 1px var(--action-accent) !important;
+}
+
+/* Badges / Pill Tags (Never rounded-full, 4px radius) */
+.flux-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: #EFF6FF;
+  border: 1px solid var(--accent-primary);
+  color: var(--text-accent);
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+}
+
+.flux-badge-stone {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: #F5F5F4;
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* Dataframe & Tables */
+div[data-testid="stDataFrame"] {
+  border: 1px solid var(--border-default) !important;
+  border-radius: 8px !important;
+  background: var(--surface-card) !important;
+}
+
+/* Tabs */
+button[data-baseweb="tab"] {
+  font-weight: 500 !important;
+  color: var(--text-secondary) !important;
+  font-size: 0.85rem !important;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+  color: var(--text-primary) !important;
+  border-bottom: 2px solid var(--text-primary) !important;
+}
+
+/* Code & Mono */
+code, pre {
+  font-family: var(--font-mono) !important;
+  background-color: #F5F5F4 !important;
+  border-radius: 4px !important;
+  font-size: 0.85rem !important;
+}

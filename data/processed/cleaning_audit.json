@@ -1,0 +1,18 @@
+{
+  "total_raw_rows": 541909,
+  "exact_duplicates_removed": 5268,
+  "unique_raw_rows": 536641,
+  "cancellations_and_returns": 10587,
+  "zero_or_negative_price_excluded": 1176,
+  "zero_quantity_excluded": 0,
+  "valid_completed_sales_rows": 524878,
+  "valid_sales_missing_customer_id": 132186,
+  "valid_sales_with_customer_id": 392692,
+  "unique_valid_invoices": 19960,
+  "unique_valid_products": 3922,
+  "unique_valid_customers": 4338,
+  "unique_countries": 38,
+  "date_min": "2010-12-01 08:26:00",
+  "date_max": "2011-12-09 12:50:00",
+  "gross_sales_volume_gbp": 10642110.8
+}

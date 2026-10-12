@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Pytest / Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated models and processed cache
+# Keep directory structures via .gitkeep
+models/*.joblib
+models/*.json
+data/processed/*.parquet
+data/processed/*.csv
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db
