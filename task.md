@@ -446,7 +446,7 @@ Do not add FastAPI merely for appearance. Keep Streamlit calling the reusable Py
 - All pages load and navigation works.
 - The application visually follows the supplied design rather than default unstyled Streamlit components.
 - UI results are driven by real processed workbook data and saved model artefacts.
-- Changing filters updates the correct metrics/charts.
+  
 - No placeholder values, fake customer examples or dead buttons remain.
 - App remains usable on typical desktop/laptop screen sizes.
 
